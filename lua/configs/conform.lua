@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     go = { "goimports", "gofmt" },
     python = { "black" },
+    nix = { "nixfmt-rfc-style" },
   },
 
   format_on_save = {

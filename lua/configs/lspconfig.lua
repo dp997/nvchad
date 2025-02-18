@@ -16,6 +16,7 @@ local servers = {
   "gopls",
   "svelte",
   "ts_ls",
+  "nixd",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
