@@ -13,4 +13,6 @@ opt.mouse = "" -- Enable mouse support
 opt.clipboard = "unnamedplus" -- Copy/paste to system clipboard
 opt.swapfile = false -- Don't use swapfile
 opt.completeopt = "menuone,noinsert,noselect" -- Autocomplete options
-opt.textwidth = 80
+opt.textwidth = 0
+opt.wrapmargin = 0
+opt.colorcolumn = "80"
