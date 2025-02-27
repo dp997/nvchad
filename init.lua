@@ -45,13 +45,14 @@ require("codecompanion").setup {
         url = "https://api.groq.com/openai/v1/chat/completions",
         schema = {
           model = {
-            default = "llama-3.3-70b-versatile",
+            default = "qwen-2.5-coder-32b",
             choices = {
               "llama-3.3-70b-versatile",
               "llama-3.2-90b-text-preview",
               "llama-3.2-11b-text-preview",
               "mixtral-8x7b-32768",
               "llama-3.1-70b-versatile",
+              "qwen-2.5-coder-32b",
             },
           },
         },
