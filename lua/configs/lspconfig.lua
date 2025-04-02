@@ -2,13 +2,14 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
+local configs = require "lspconfig/configs"
 
 -- EXAMPLE
 local servers = {
   "html",
   "cssls",
   "pyright",
-  "golangci_lint_ls",
+  -- "golangci_lint_ls",
   "jsonls",
   "lua_ls",
   "dockerls",
@@ -21,6 +22,21 @@ local servers = {
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
+-- if not configs.golangcilsp then
+--   configs.golangcilsp = {
+--     default_config = {
+--       cmd = { "golangci-lint-langserver" },
+--       root_dir = lspconfig.util.root_pattern(".git", "go.mod"),
+--       init_options = {
+--         command = { "golangci-lint", "run", "--enable-all", "--out-format", "json" },
+--       },
+--     },
+--   }
+-- end
+-- lspconfig.golangcilsp.setup {
+--   filetypes = { "go" },
+-- }
+
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = nvlsp.on_attach,

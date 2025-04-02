@@ -16,3 +16,13 @@ opt.completeopt = "menuone,noinsert,noselect" -- Autocomplete options
 opt.textwidth = 0
 opt.wrapmargin = 0
 opt.colorcolumn = "80"
+
+-- folding
+opt.foldmethod = "indent"
+-- opt.foldexpr = 'getline(v:lnum)[0]=="\\t"'
+
+opt.foldcolumn = "0"
+opt.foldtext = ""
+opt.foldlevel = 99
+opt.foldlevelstart = 1
+opt.foldnestmax = 4
