@@ -13,6 +13,7 @@ local servers = {
   "ts_ls",
   "nixd",
   "ruff",
+  "ltex-ls",
 }
 vim.lsp.enable(servers)
 
