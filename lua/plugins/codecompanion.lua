@@ -4,13 +4,14 @@ return {
     enabled = true,
     lazy = false,
     config = function()
-      local default_model = "groq.meta-llama/llama-4-maverick-17b-128e-instruct"
+      local default_model = "Coder"
       local available_models = {
         "groq.meta-llama/llama-4-maverick-17b-128e-instruct",
         "groq.meta-llama/llama-4-scout-17b-16e-instruct",
         "groq.qwen-qwq-32b",
-        "google.models/gemini-2.5-pro-preview-03-25",
+        "google.models/gemini-2.5-flash-preview-05-20",
         "openai.gpt-4o-mini",
+        "Coder",
       }
       local current_model = default_model
 

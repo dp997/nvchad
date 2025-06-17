@@ -15,6 +15,7 @@ map("v", "ga", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true
 
 -- Expand 'cc' into 'CodeCompanion' in the command line
 vim.cmd [[cab cc CodeCompanion]]
+vim.cmd [[cab ccc CodeCompanionChat]]
 -- resizing windows
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
 map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
