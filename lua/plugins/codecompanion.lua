@@ -4,14 +4,14 @@ return {
     enabled = true,
     lazy = false,
     config = function()
-      local default_model = "Coder"
+      local default_model = "coder"
       local available_models = {
         "groq.meta-llama/llama-4-maverick-17b-128e-instruct",
         "groq.meta-llama/llama-4-scout-17b-16e-instruct",
-        "groq.qwen-qwq-32b",
+        "groq.qwen/qwen3-32b",
         "google.models/gemini-2.5-flash-preview-05-20",
         "openai.gpt-4o-mini",
-        "Coder",
+        "coder",
       }
       local current_model = default_model
 
@@ -43,7 +43,7 @@ return {
           openwebui = function()
             return require("codecompanion.adapters").extend("openai_compatible", {
               env = {
-                url = "https://chat.dsrv.pl",
+                url = "cmd: pass show openwebui_url",
                 api_key = "cmd: pass show openwebui_key",
                 chat_url = "/api/chat/completions",
                 models_endpoint = "/api/models",
