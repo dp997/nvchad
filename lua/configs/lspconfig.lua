@@ -11,9 +11,9 @@ local servers = {
   "gopls",
   "svelte",
   "ts_ls",
-  "nixd",
   "ruff",
-  "ltex-ls",
+  "ltex",
+  "rust_analyzer",
 }
 vim.lsp.enable(servers)
 
