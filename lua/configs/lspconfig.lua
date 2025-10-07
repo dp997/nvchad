@@ -3,6 +3,7 @@ require("nvchad.configs.lspconfig").defaults()
 local servers = {
   "html",
   "cssls",
+  "clangd",
   "pyright",
   "jsonls",
   "lua_ls",
@@ -27,6 +28,7 @@ require("lspconfig").pyright.setup {
       analysis = {
         -- Ignore all files for analysis to exclusively use Ruff for linting
         ignore = { "*" },
+        typeCheckingMode = "basic",
       },
     },
   },
