@@ -15,10 +15,10 @@ local servers = {
   "ruff",
   "ltex",
   "rust_analyzer",
+  "tinymist",
 }
-vim.lsp.enable(servers)
 
-require("lspconfig").pyright.setup {
+vim.lsp.config("pyright", {
   settings = {
     pyright = {
       -- Using Ruff's import organizer
@@ -32,4 +32,13 @@ require("lspconfig").pyright.setup {
       },
     },
   },
-}
+})
+
+vim.lsp.config("tinymist", {
+  settings = {
+    exportPdf = "onType",
+    outputPath = "$root/target/$dir/$name",
+  },
+})
+
+vim.lsp.enable(servers)
