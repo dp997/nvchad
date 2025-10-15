@@ -1,10 +1,8 @@
-require("nvchad.configs.lspconfig").defaults()
-
 local servers = {
   "html",
   "cssls",
   "clangd",
-  "pyright",
+  "basedpyright",
   "jsonls",
   "lua_ls",
   "dockerls",
@@ -20,7 +18,7 @@ local servers = {
 
 vim.lsp.config("pyright", {
   settings = {
-    pyright = {
+    basedpyright = {
       -- Using Ruff's import organizer
       disableOrganizeImports = true,
     },
