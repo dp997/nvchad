@@ -25,8 +25,8 @@ map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Wi
 map("t", "jk", "<C-x>")
 
 -- toggle autoformat
-map("n", "<leader>uf", "FormatDisable!")
-map("n", "<leader>ue", "FormatEnable")
+-- map("n", "<leader>uf", "FormatDisable!")
+-- map("n", "<leader>ue", "FormatEnable")
 
 -- tabs
 map("n", "<leader>tn", "<cmd>tabnew %<cr>", { desc = "Open new tab" })

@@ -14,6 +14,8 @@ local servers = {
   "ltex",
   "rust_analyzer",
   "tinymist",
+  "nil_ls",
+  "nixfmt",
 }
 
 vim.lsp.config("pyright", {

@@ -28,5 +28,10 @@ return {
     },
   },
 
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = require "configs.nvimtree",
+  },
+
   { "chomosuke/typst-preview.nvim", lazy = false, version = "1.*", opts = {} },
 }

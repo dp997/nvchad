@@ -8,7 +8,8 @@ o.swapfile = false
 o.completeopt = "menuone,noinsert,noselect"
 o.textwidth = 0
 o.wrapmargin = 0
-o.colorcolumn = "80"
+o.colorcolumn = "120"
+o.relativenumber = true
 
 -- folding
 o.foldmethod = "indent"

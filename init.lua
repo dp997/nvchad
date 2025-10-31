@@ -28,6 +28,7 @@ require("lazy").setup({
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
+dofile(vim.g.base46_cache .. "syntax")
 
 require "options"
 require "nvchad.autocmds"
@@ -35,3 +36,9 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- reload theme
+require("base46").load_all_highlights()
+vim.api.nvim_create_user_command("ReloadTheme", function()
+  require("base46").load_all_highlights()
+end, {})
