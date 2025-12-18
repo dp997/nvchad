@@ -1,5 +1,9 @@
 return {
   {
+    "mason-org/mason.nvim",
+    enabled = false,
+  },
+  {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
@@ -34,4 +38,9 @@ return {
   },
 
   { "chomosuke/typst-preview.nvim", lazy = false, version = "1.*", opts = {} },
+
+  {
+    "replu/tinygo.nvim",
+    opts = {},
+  },
 }

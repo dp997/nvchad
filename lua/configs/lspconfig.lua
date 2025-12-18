@@ -2,7 +2,8 @@ local servers = {
   "html",
   "cssls",
   "clangd",
-  "basedpyright",
+  -- "basedpyright",
+  "ty",
   "jsonls",
   "lua_ls",
   "dockerls",
@@ -41,4 +42,11 @@ vim.lsp.config("tinymist", {
   },
 })
 
+-- vim.lsp.config("ty", {
+--   settings = {
+--     ty = {
+--
+--     }
+--   }
+-- })
 vim.lsp.enable(servers)

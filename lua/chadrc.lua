@@ -9,7 +9,7 @@ local noctalia_path = vim.fn.stdpath "config" .. "/lua/themes/noctalia.lua"
 
 local test_theme = function()
   if vim.uv.fs_stat(noctalia_path) then
-    return "noctalia"
+    return "flexoki"
   else
     return "wombat"
   end
